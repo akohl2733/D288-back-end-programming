@@ -1,6 +1,6 @@
-package edu.wgu.d288_backend.config;
+package ak288.com.example.demo.config;
 
-import edu.wgu.d288_backend.entities.*;
+import ak288.com.example.demo.entities.*;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurer;
