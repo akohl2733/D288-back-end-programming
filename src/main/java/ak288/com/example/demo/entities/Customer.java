@@ -7,7 +7,9 @@ import org.hibernate.annotations.UpdateTimestamp;
 
 import jakarta.persistence.*;
 import java.util.Date;
+import java.util.HashSet;
 import java.util.Set;
+import java.util.HashSet;
 
 @Entity
 @Table(name="customers")
@@ -51,6 +53,16 @@ public class Customer {
     private Set<Cart> carts;
 
     public Customer() {
+    }
+
+    public void addCart(Cart cart) {
+        if (cart != null) {
+            if (carts == null) {
+                carts = new HashSet<>();
+            }
+            carts.add(cart);
+            cart.setCustomer(this);
+        }
     }
 
 }

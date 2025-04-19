@@ -41,12 +41,13 @@ public class CartItem {
     @ManyToMany
     @JoinTable(
             name = "excursion_cartitem",
-            joinColumns = @JoinColumn(name = "cartitem_id"),
+            joinColumns = @JoinColumn(name = "cart_item_id"),
             inverseJoinColumns = @JoinColumn(name = "excursion_id")
     )
     private Set<Excursion> excursions;
 
     public CartItem() {
     }
+
 
 }
