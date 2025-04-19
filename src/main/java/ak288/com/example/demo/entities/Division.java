@@ -34,7 +34,7 @@ public class Division {
 
     @ManyToOne
     @JoinColumn(name = "country_id")
-    private Country country_id;
+    private Country country;
 
     public Division() {
     }
