@@ -32,8 +32,8 @@ public class Division {
     @UpdateTimestamp
     private Date last_update;
 
-    @ManyToOne
-    @JoinColumn(name = "country_id")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "country_id", nullable = false)
     private Country country;
 
     public Division() {

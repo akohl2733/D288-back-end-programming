@@ -8,6 +8,8 @@ import org.hibernate.annotations.UpdateTimestamp;
 import jakarta.persistence.*;
 import java.util.Date;
 import java.util.Set;
+import java.util.HashSet;
+
 
 @Entity
 @Table(name="countries")
@@ -31,8 +33,8 @@ public class Country {
     @UpdateTimestamp
     private Date last_update;
 
-    @OneToMany(mappedBy = "country")
-    private Set<Division> divisions;
+    @OneToMany(mappedBy = "country", cascade = CascadeType.ALL)
+    private Set<Division> divisions = new HashSet<>();
 
     public Country() {
     }
