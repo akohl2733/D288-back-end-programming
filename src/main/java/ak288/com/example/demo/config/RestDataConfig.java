@@ -45,4 +45,3 @@ public class RestDataConfig implements RepositoryRestConfigurer {
 
     }
 }
-
