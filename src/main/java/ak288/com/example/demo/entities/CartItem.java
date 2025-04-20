@@ -6,7 +6,6 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import jakarta.persistence.*;
-import java.math.BigDecimal;
 import java.util.Date;
 import java.util.Set;
 

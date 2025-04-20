@@ -50,7 +50,7 @@ public class BootstrapData implements CommandLineRunner {
             andy.setAddress("90 Leela Way");
             andy.setPostal_code("06084");
             andy.setPhone("(123)456-7890");
-            andy.setDivision_id(andyDiv);
+            andy.setDivision(andyDiv);
             customerRepository.save(andy);
 
             Customer gat = new Customer();
@@ -59,7 +59,7 @@ public class BootstrapData implements CommandLineRunner {
             gat.setAddress("24 Los Pollos Avenue");
             gat.setPostal_code("87101");
             gat.setPhone("(124)356-7890");
-            gat.setDivision_id(gatDiv);
+            gat.setDivision(gatDiv);
             customerRepository.save(gat);
 
             Customer tony = new Customer();
@@ -68,7 +68,7 @@ public class BootstrapData implements CommandLineRunner {
             tony.setAddress("23 Bing Way");
             tony.setPostal_code("08400");
             tony.setPhone("(123)465-7890");
-            tony.setDivision_id(tonyDiv);
+            tony.setDivision(tonyDiv);
             customerRepository.save(tony);
 
             Customer sponge = new Customer();
@@ -77,7 +77,7 @@ public class BootstrapData implements CommandLineRunner {
             sponge.setAddress("1 Pineapple Street");
             sponge.setPostal_code("90263");
             sponge.setPhone("(111)356-7890");
-            sponge.setDivision_id(spongeDiv);
+            sponge.setDivision(spongeDiv);
             customerRepository.save(sponge);
 
             Customer goat = new Customer();
@@ -86,7 +86,7 @@ public class BootstrapData implements CommandLineRunner {
             goat.setAddress("39 Chiraq Blvd");
             goat.setPostal_code("60007");
             goat.setPhone("(123)666-7890");
-            goat.setDivision_id(goatDiv);
+            goat.setDivision(goatDiv);
             customerRepository.save(goat);
 
             logger.info("Added {} sample customers.", customerRepository.count() - 1);
